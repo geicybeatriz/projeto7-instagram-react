@@ -1,14 +1,14 @@
 export default function Story(props){
-    const {nome, imagem} = props;
+    const {name, image} = props;
 
     return (
-        <div class="story">
-            <div class="imagem">
-                <img src={`assets/img/${imagem}`} alt={nome}/>
+        <article class="story">
+            <div class="image">
+                <img src={`assets/img/${image}`} alt={name}/>
             </div>
-            <div class="usuario">
-                {nome}
+            <div class="user">
+                {name}
             </div>
-        </div>
+        </article>
     );
 }

@@ -1,53 +1,53 @@
 import Story from "./Story";
 
-const dadosStory = [
+const dataStory = [
     {
-        nome:"Luzinha",
-        imagem: "ghost.jpg"
+        name:"Little light",
+        image: "ghost.jpg"
     },
     {
-        nome:"Zavala",
-        imagem: "Zavala.jpg"
+        name:"Zavala",
+        image: "Zavala.jpg"
     },
     {
-        nome:"Ikora Rey",
-        imagem: "IkoraRey.jpg"
+        name:"Ikora Rey",
+        image: "IkoraRey.jpg"
     },
     {
-        nome:"Cayde-6",
-        imagem: "Cayde6.jpeg"
+        name:"Cayde-6",
+        image: "Cayde6.jpeg"
     },
     {
-        nome:"Eris Morn",
-        imagem: "Eris.jpg"
+        name:"Eris Morn",
+        image: "Eris.jpg"
     },
     {
-        nome:"Lord Shaxx",
-        imagem: "Shaxx.png"
+        name:"Lord Shaxx",
+        image: "Shaxx.png"
     },
     {
-        nome:"Xur",
-        imagem: "Xur.jpg"
+        name:"Xur",
+        image: "Xur.jpg"
     },
     {
-        nome:"Saint 14",
-        imagem: "casal.jpeg"
+        name:"Saint 14",
+        image: "casal.jpeg"
     },
     {
-        nome:"Destiny",
-        imagem: "raid.png"
+        name:"Destiny",
+        image: "raid.png"
     }
 ];
 
 export default function Stories(){
     return (
-        <div class="stories">
-            {dadosStory.map((dado)=>(
-                <Story nome={dado.nome} imagem={dado.imagem}/>
+        <section class="stories">
+            {dataStory.map((data)=>(
+                <Story name={data.name} image={data.image}/>
             ))}
-            <div class="setinha">
+            <div class="little-arrow">
                 <ion-icon name="chevron-forward-circle"></ion-icon>
             </div>
-        </div>
+        </section>
     );
 }

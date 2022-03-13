@@ -1,21 +1,21 @@
-import Usuario from "./Usuario";
-import Sugestoes from "./Sugestoes";
+import User from "./User";
+import Suggestions from "./Suggestions";
 
-const dadosUsuario = [
+const userData = [
     {
-    nome:"Luzinha",
-    imagem:"ghost.jpg"
+    name:"Little Light",
+    image:"ghost.jpg"
     }
 ];
 
 export default function Sidebar(){
     return (
-        <div class="sidebar">
-            {dadosUsuario.map((usuario) => (
-                <Usuario nome={usuario.nome} imagem={usuario.imagem}/>
+        <aside class="sidebar">
+            {userData.map((user) => (
+                <User name={user.name} image={user.image}/>
             ))}
 
-            <Sugestoes />
+            <Suggestions />
 
             <div class="links">
                 Sobre • Ajuda • Imprensa • API • Carreiras • Privacidade • Termos • Localizações • Contas mais relevantes • Hashtags • Idioma
@@ -24,6 +24,6 @@ export default function Sidebar(){
             <div class="copyright">
                 © 2021 INSTAGRAM DO FACEBOOK
             </div>
-        </div>
+        </aside>
     );
 }

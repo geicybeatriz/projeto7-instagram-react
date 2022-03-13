@@ -1,26 +1,26 @@
 export default function Post(props){
-    const {postadoPor, postagem, curtidoPor} = props;
-    const {nome, imagem} = postadoPor;
-    const {nomePerfil, imagemPerfil, curtidas} = curtidoPor;
+    const {postedBy, content, likedBy} = props;
+    const {name, image} = postedBy;
+    const {likedByName, likedByImage, likes} = likedBy;
 
     return (
-        <div class="post">
-            <div class="topo">
-                <div class="usuario">
-                    <img src={`assets/img/${imagem}`} alt={nome} />
-                    {nome}
+        <section class="post">
+            <article class="top">
+                <div class="user">
+                    <img src={`assets/img/${image}`} alt={name} />
+                    {name}
                 </div>
-                <div class="acoes">
+                <div class="actions">
                     <ion-icon name="ellipsis-horizontal"></ion-icon>
                 </div>
-            </div>
+            </article>
 
-            <div class="conteudo">
-                <img src={`assets/img/${postagem}`} alt="postagem"/>
-            </div>
+            <article class="content">
+                <img src={`assets/img/${content}`} alt="postagem"/>
+            </article>
 
-            <div class="fundo">
-                <div class="acoes">
+            <article class="bottom-post">
+                <div class="actions">
                     <div>
                         <ion-icon name="heart-outline"></ion-icon>
                         <ion-icon name="chatbubble-outline"></ion-icon>
@@ -31,13 +31,13 @@ export default function Post(props){
                 </div>
                 </div>
 
-                <div class="curtidas">
-                    <img src={`assets/img/${imagemPerfil}`} alt={nomePerfil} />
+                <div class="likes">
+                    <img src={`assets/img/${likedByImage}`} alt={likedByName} />
                     <div class="texto">
-                        Curtido por <strong>{nomePerfil}</strong> e <strong>outras {curtidas} pessoas</strong>
+                        Curtido por <strong>{likedByName}</strong> e <strong>outras {likes} pessoas</strong>
                     </div>
                 </div>
-            </div>
-        </div>
+            </article>
+        </section>
     );
 }

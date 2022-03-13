@@ -3,7 +3,7 @@ import Posts from "./Posts";
 
 export default function Feed(){
     return(
-        <div class="esquerda">
+        <div class="left">
             <Stories/>
             <Posts/>;
         </div>

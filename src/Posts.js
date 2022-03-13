@@ -1,48 +1,48 @@
 import Post from "./Post";
 
-const listaDePosts = [
+const dataList = [
     {
-        postadoPor:
+        postedBy:
         {
-            nome:"Luzinha",
-            imagem: "ghost.jpg"
+            name:"Little Light",
+            image: "ghost.jpg"
         },
-        postagem: "postagem1.jpeg",
-        curtidoPor: 
+        content: "postagem1.jpeg",
+        likedBy: 
         {
-            nomePerfil:"Zavala",
-            imagemPerfil:"Zavala.jpg",
-            curtidas: 101.435
+            likedByName:"Zavala",
+            likedByImage:"Zavala.jpg",
+            likes: 101.435
         },
         
     },
     {
-        postadoPor: 
+        postedBy: 
         {
-            nome:"Cayde-6",
-            imagem: "Cayde6.jpeg"
+            name:"Cayde-6",
+            image: "Cayde6.jpeg"
         },
-        postagem: "postagem2.jpg",
-        curtidoPor:
+        content: "postagem2.jpg",
+        likedBy: 
         {
-            nomePerfil: "Ikora Rey",
-            imagemPerfil: "IkoraRey.jpg",
-            curtidas: 89.757
+            likedByName: "Ikora Rey",
+            likedByImage: "IkoraRey.jpg",
+            likes: 89.757
         },
         
     },
     {
-        postadoPor:
+        postedBy:
         {
-            nome:"Lord Shaxx",
-            imagem: "Shaxx.png"
+            name:"Lord Shaxx",
+            image: "Shaxx.png"
         },
-        postagem: "traveler.jpg",
-        curtidoPor: 
+        content: "traveler.jpg",
+        likedBy: 
         {
-            nomePerfil: "Saint 14",
-            imagemPerfil: "casal.jpeg",
-            curtidas: 101.546
+            likedByName: "Saint 14",
+            likedByImage: "casal.jpeg",
+            likes: 101.546
         },
         
     }
@@ -51,10 +51,10 @@ const listaDePosts = [
 
 export default function Posts(){
     return (
-        <div class="posts">
-            {listaDePosts.map ((postIndividual) => (
-                <Post postadoPor={postIndividual.postadoPor} postagem={postIndividual.postagem} curtidoPor={postIndividual.curtidoPor} />
+        <section class="posts">
+            {dataList.map ((dataPost) => (
+                <Post postedBy={dataPost.postedBy} content={dataPost.content} likedBy={dataPost.likedBy} />
             ))}
-        </div> 
+        </section> 
     );
 }

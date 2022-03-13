@@ -1,38 +1,38 @@
 
 export default function Navbar(){
     return (
-        <div class="navbar">
-          <div class="container">
-            <div class="logo">
+        <header class="navbar">
+          <section class="container">
+            <article class="logo">
               <ion-icon name="logo-instagram"></ion-icon>
-              <div class="separador"></div>
+              <div class="partition"></div>
               <img src="assets/img/logo.png" />
-            </div>
+            </article>
 
-            <div class="logo-mobile">
+            <article class="logo-mobile">
               <ion-icon name="logo-instagram"></ion-icon>
-            </div>
+            </article>
 
-            <div class="instagram-mobile">
+            <article class="instagram-mobile">
               <img src="assets/img/logo.png" />
-            </div>
+            </article>
   
-            <div class="pesquisa">
+            <article class="search">
               <input type="text" placeholder="Pesquisar" />
-            </div>
+            </article>
   
-            <div class="icones">
+            <article class="icons">
               <ion-icon name="paper-plane-outline"></ion-icon>
               <ion-icon name="compass-outline"></ion-icon>
               <ion-icon name="heart-outline"></ion-icon>
               <ion-icon name="person-outline"></ion-icon>
-            </div>
+            </article>
 
-            <div class="icones-mobile">
+            <article class="icons-mobile">
               <ion-icon name="paper-plane-outline"></ion-icon>
-            </div>
-          </div>
-        </div>
+            </article>
+          </section>
+        </header>
     );
 }
 

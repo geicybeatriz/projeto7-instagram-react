@@ -3,9 +3,9 @@ import Sidebar from "./Sidebar";
 
 export default function Container(){
     return(
-        <div class="corpo">
+        <main class="main">
             <Feed/>
             <Sidebar/>
-        </div>
+        </main>
     );
 }
